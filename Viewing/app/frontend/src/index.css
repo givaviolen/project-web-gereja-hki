@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --hki-navy: #0A2540;
+  --hki-navy-hover: #1E3A8A;
+  --hki-gold: #D4AF37;
+  --hki-gold-hover: #F1C40F;
+  --hki-ivory: #FDFBF7;
+  --hki-gray: #F3F4F6;
+  --hki-text: #1E293B;
+  --hki-muted: #64748B;
+
+  /* shadcn/ui variables — harus di satu blok :root yang sama */
+  --background: 0 0% 100%;
+  --foreground: 215 47% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 47% 14%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 215 47% 14%;
+  --primary: 213 73% 15%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 220 14% 96%;
+  --secondary-foreground: 215 47% 14%;
+  --muted: 220 14% 96%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 43 65% 52%;
+  --accent-foreground: 215 47% 14%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 213 73% 15%;
+  --chart-1: 213 73% 15%;
+  --chart-2: 43 65% 52%;
+  --chart-3: 218 81% 33%;
+  --chart-4: 215 16% 47%;
+  --chart-5: 142 50% 36%;
+  --radius: 0.75rem;
+}
+
+/* Base body styles — di luar @layer agar tidak konflik dengan Tailwind reset */
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--hki-ivory);
+  color: var(--hki-text);
+}
+
+.font-heading {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Debug wrapper — dipindah ke sini agar tidak terpisah */
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+
+  [data-debug-wrapper="true"] > * {
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-top: inherit;
+    margin-bottom: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    column-gap: inherit;
+    row-gap: inherit;
+    gap: inherit;
+    border-left-width: inherit;
+    border-right-width: inherit;
+    border-top-width: inherit;
+    border-bottom-width: inherit;
+    border-left-style: inherit;
+    border-right-style: inherit;
+    border-top-style: inherit;
+    border-bottom-style: inherit;
+    border-left-color: inherit;
+    border-right-color: inherit;
+    border-top-color: inherit;
+    border-bottom-color: inherit;
+  }
+}
+
+/* ── Utilities ────────────────────────────────────────── */
+
+.gorga-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' fill='none'%3E%3Cpath d='M40 8 L48 24 L64 24 L52 36 L56 52 L40 44 L24 52 L28 36 L16 24 L32 24 Z' stroke='%23D4AF37' stroke-width='0.8' opacity='0.5'/%3E%3Ccircle cx='40' cy='40' r='3' fill='%23D4AF37' opacity='0.4'/%3E%3C/svg%3E");
+  background-size: 120px 120px;
+  background-repeat: repeat;
+}
+
+.live-pulse {
+  animation: live-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes live-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.6); }
+  50%       { box-shadow: 0 0 0 8px rgba(220, 38, 38, 0); }
+}
+
+.fade-up {
+  animation: fadeUp 0.7s ease-out both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,99 @@
+{
+  "theme": "Light",
+  "archetype": "Archetype 1 (Organic & Earthy / Trust) + Archetype 4 (Swiss / Authority) customized with Deep Blue and Gold",
+  "colors": {
+    "primary": "#0A2540",
+    "primary_hover": "#1E3A8A",
+    "accent_gold": "#D4AF37",
+    "accent_gold_hover": "#F1C40F",
+    "background_base": "#FDFBF7",
+    "background_alt": "#F3F4F6",
+    "text_main": "#1E293B",
+    "text_muted": "#64748B",
+    "admin_sidebar": "#0A2540",
+    "danger_red": "#DC2626",
+    "success_green": "#16A34A"
+  },
+  "typography": {
+    "heading_font": "Montserrat",
+    "body_font": "Inter",
+    "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#0A2540]",
+    "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[#0A2540]",
+    "h3": "text-xl sm:text-2xl font-semibold text-[#0A2540]",
+    "body": "text-base text-[#1E293B] leading-relaxed",
+    "label": "text-sm font-semibold text-[#64748B] tracking-[0.1em] uppercase"
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-20 md:py-32 px-6 md:px-12",
+    "container_max": "max-w-7xl mx-auto",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8",
+    "card_padding": "p-6 md:p-8"
+  },
+  "surfaces_and_micro_themes": {
+    "public_cards": "bg-white border border-[#0A2540]/10 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300",
+    "admin_cards": "bg-white border border-gray-200 rounded-lg shadow-sm p-6",
+    "hero_overlay": "bg-[#0A2540]/60",
+    "gorga_accent": "Use an SVG background pattern of Batak Toba Gorga in the hero or footer with 5% opacity and gold (#D4AF37) fill."
+  },
+  "components": {
+    "button_primary": "bg-[#0A2540] text-white hover:bg-[#1E3A8A] rounded-full px-8 py-3 font-semibold transition-colors data-testid='btn-primary'",
+    "button_gold": "bg-[#D4AF37] text-white hover:bg-[#F1C40F] rounded-full px-8 py-3 font-semibold transition-colors shadow-md data-testid='btn-gold'",
+    "live_badge": "bg-[#DC2626] text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse flex items-center gap-2",
+    "schedule_card": "col-span-1 md:col-span-6 lg:col-span-3 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group",
+    "language_switcher": "flex items-center gap-2 text-sm font-medium text-[#0A2540] bg-white/80 backdrop-blur px-4 py-2 rounded-full border border-[#0A2540]/10 hover:bg-white"
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_church_exterior",
+        "url": "https://images.unsplash.com/photo-1767897672315-1e551e4eabfb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwyfHxwcm90ZXN0YW50JTIwY2h1cmNoJTIwYnVpbGRpbmclMjBleHRlcmlvcnxlbnwwfHx8fDE3Nzg1NzI1MDJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "A beautiful white church building with a steeple. Use in the Hero section with a dark blue overlay.",
+        "alt_text": "Gedung Gereja HKI Laguboti"
+      },
+      {
+        "category": "church_congregation_worship",
+        "url": "https://images.pexels.com/photos/34504326/pexels-photo-34504326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Congregation standing in reverence. Use for 'Tentang Gereja' or Community sections.",
+        "alt_text": "Jemaat HKI Beribadah"
+      },
+      {
+        "category": "church_sermon",
+        "url": "https://images.pexels.com/photos/29422232/pexels-photo-29422232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Congregation listening to a speaker. Use for 'Renungan & Artikel'.",
+        "alt_text": "Khotbah dan Renungan Harian"
+      },
+      {
+        "category": "bible_study",
+        "url": "https://images.unsplash.com/photo-1623466453010-1ecb0e6d494a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwyfHxiaWJsZSUyMHN0dWR5JTIwY29tbXVuaXR5fGVufDB8fHx8MTc3ODU3MjUwMXww&ixlib=rb-4.1.0&q=85",
+        "description": "Person reading. Use for Daily Verse (Ayat Harian) background or devotional section.",
+        "alt_text": "Membaca Alkitab"
+      }
+    ]
+  },
+  "pages_and_features": {
+    "Beranda": {
+      "hero": "Dark blue overlay (bg-[#0A2540]/60) over the hero church image. White text, gold CTA. Include language switcher (ID / Batak Toba) floating at top.",
+      "daily_verse": "Bilingual component. Left side: Indonesian. Right side (or toggle): Batak Toba. Pale gold background (#FDFBF7) with an elegant subtle gorga SVG pattern.",
+      "schedule_cards": "Bento grid with 4 cards: Ibadah Minggu, Sekolah Minggu, Naposobulung, Partangiangan. Icons in dark blue, hover states add a gold bottom border.",
+      "live_stream": "A prominent section with a Youtube iframe. Include a pulsing red 'Live Now' badge if active. Dark blue container.",
+      "latest_news": "3-column grid for articles/news. Image top, title bold dark blue, date text-muted."
+    },
+    "Tentang_Gereja": "Generous spacing. Pastor profile as a crisp card. Vision/Mission text large and centered. Service structure in a timeline or grid format.",
+    "Kontak_Donasi": "Split layout. Left: Google Maps embed (grayscale/muted if possible) and Address. Right: Donation info (Bank/QRIS) and a big green WhatsApp button.",
+    "Admin_Dashboard": {
+      "layout": "Sidebar navigation (dark blue). Top header with user profile. Main content area with gray background.",
+      "features": "CRUD table for Jemaat (Full Name, Gender, Address, Wijk/Sector, Status, WhatsApp). Shadcn Table with search input for Wijk. Export CSV button.",
+      "charts": "Recharts BarChart or PieChart showing total congregation grouped by Wijk or Status. Use brand colors (#0A2540, #D4AF37, #1E3A8A)."
+    }
+  },
+  "technical_instructions_to_main_agent": [
+    "Install required dependencies: lucide-react for icons, recharts for admin charts, date-fns for formatting.",
+    "Setup routing using React Router (Public routes and /admin protected route).",
+    "Use standard Tailwind classes. For Gorga motif, inject an inline SVG with `fill='currentColor'` and `opacity-5` applied within a container.",
+    "Implement context or state for Language Switcher (Indonesian/Batak Toba) and apply it to the Daily Verse component.",
+    "Admin Login uses JWT (mock or simple implementation for now).",
+    "Ensure all interactive elements have `data-testid` attributes (e.g., `data-testid='login-submit'`, `data-testid='nav-beranda'`).",
+    "Do NOT use HTML `<select>` or native date pickers. Use Shadcn components for forms in Admin dashboard.",
+    "Use Montserrat from Google Fonts for headings and Inter for body text."
+  ]
+}
